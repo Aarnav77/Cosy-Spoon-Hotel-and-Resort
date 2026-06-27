@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Cozy Spoon Hotel & Restaurant</title>
+    <style>
+        /* Basic styling to keep things looking clean and organized */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcf9f5;
+            color: #333;
+        }
+        header {
+            background-color: #2c1a11;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .banner {
+            text-align: center;
+            background-color: #4a3728;
+            color: white;
+            padding: 40px 20px;
+        }
+        .banner img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            border-bottom: 2px solid #ff9f1c;
+            padding-bottom: 10px;
+            color: #2c1a11;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 30%;
+            min-width: 280px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            max-width: 500px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .btn {
+            background-color: #ff9f1c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            background-color: #e08500;
+        }
+        .contact-box {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        footer {
+            background-color: #2c1a11;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Menu -->
+    <header>
+        <h1>🍴 Cozy Spoon Hotel & Resort</h1>
+        <nav>
+            <a href="#about">About</a> | 
+            <a href="#gallery">Our Spaces</a> | 
+            <a href="#booking">Bookings</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Welcome Banner (Grand Entry Image) -->
+    <div class="banner" id="about">
+        <h2>Welcome to Luxury</h2>
+        <p>Experience world-class accommodation and fine dining.</p>
+        <img src="grand-entry.jpg" alt="Hotel Grand Entry">
+    </div>
+
+    <!-- Gallery / Spaces Section -->
+    <div class="section" id="gallery">
+        <h2>Explore Our Resort</h2>
+        <div class="grid">
+            
+            <!-- Item 1: Imperial Suite -->
+            <div class="card">
+                <img src="hotel-suite.jpg" alt="Imperial Suite">
+                <h3>The Imperial Royal Suite</h3>
+                <p>Palace-style luxury featuring majestic gold curtains and crystal chandeliers.</p>
+            </div>
+
+            <!-- Item 2: Heritage Room -->
+            <div class="card">
+                <img src="hotel-room.jpg" alt="Heritage Room">
+                <h3>Classic Heritage Room</h3>
+                <p>Relax in our beautiful, comfortable four-poster canopy bedding setup.</p>
+            </div>
+
+            <!-- Item 3: Grand Dining Room -->
+            <div class="card">
+                <img src="hotel-restaurant.jpg" alt="Grand Dining Room">
+                <h3>The Grand Dining Room</h3>
+                <p>Enjoy luxury dining under warm lights and beautiful indoor greenery decorations.</p>
+            </div>
+
+            <!-- Item 4: Gourmet Treats -->
+            <div class="card">
+                <img src="restaurant-image.jpg" alt="Gourmet Food">
+                <h3>Gourmet Artisanal Treats</h3>
+                <p>Carefully selected Mediterranean citrus fruit boxes and fine cold-pressed oils.</p>
+            </div>
+
+            <!-- Item 5: Garden Pathway -->
+            <div class="card">
+                <img src="elegant-garden.jpg" alt="Garden Path">
+                <h3>The Elegant Garden Walkway</h3>
+                <p>Take a relaxing morning stroll through our private floral paths and pergolas.</p>
+            </div>
+
+            <!-- Item 6: Lobby Lounge -->
+            <div class="card">
+                <img src="hotel-lounge.jpg" alt="Atrium Lounge">
+                <h3>The Grand Atrium Lounge</h3>
+                <p>Unwind on comfortable velvet seating options inside our soaring open lobby space.</p>
+            </div>
+
+            <!-- Item 7: Rooftop Pool -->
+            <div class="card">
+                <img src="hotel-park.jpg" alt="Rooftop Pool">
+                <h3>Rooftop Park & Pool</h3>
+                <p>Swim in our curved open-air rooftop pool surrounded by manicured turf grass layout.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Registration & Booking Forms Section -->
+    <div class="section" id="booking">
+        <h2>Online Registration Forms</h2>
+        <p>Fill out the forms below to register your reservations with us:</p>
+
+        <!-- Form 1: Hotel Room Booking -->
+        <h3>1. Register Hotel Room Booking</h3>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label>Your Full Name:</label>
+                <input type="text" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label>Select Room Option:</label>
+                <select required>
+                    <option value="suite">The Imperial Royal Suite</option>
+                    <option value="room">Classic Heritage Room</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Check-In Date:</label>
+                <input type="date" required>
+            </div>
+            <button type="submit" class="btn">Submit Room Registration</button>
+        </form>
+
+        <!-- Form 2: Banquet Hall Booking -->
+        <h3>2. Register Banquet Hall Booking</h3>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label>Event Organizer Name:</label>
+                <input type="text" placeholder="Enter organizer name" required>
+            </div>
+            <div class="form-group">
+                <label>Event Category:</label>
+                <select required>
+                    <option value="wedding">Luxury Wedding Reception</option>
+                    <option value="gala">Corporate Dinner Gala</option>
+                    <option value="party">Private Family Celebration</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Event Date:</label>
+                <input type="date" required>
+            </div>
+            <button type="submit" class="btn">Submit Banquet Registration</button>
+        </form>
+
+        <!-- Form 3: Dining Table Booking -->
+        <h3>3. Register Restaurant Table Booking</h3>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label>Guest Name:</label>
+                <input type="text" placeholder="Enter guest name" required>
+            </div>
+            <div class="form-group">
+                <label>Number of Guests:</label>
+                <select required>
+                    <option value="2">2 Diners</option>
+                    <option value="4">4 Diners</option>
+                    <option value="6">6 Diners or More</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Dining Date:</label>
+                <input type="date" required>
+            </div>
+            <button type="submit" class="btn">Submit Table Registration</button>
+        </form>
+    </div>
+
+    <!-- Contact & Manager Info Section -->
+    <div class="section" id="contact">
+        <h2>Help & Contact Desk</h2>
+        <div class="contact-box">
+            <h3>Management Office Details</h3>
+            <p><strong>Hotel General Manager:</strong> Aarnav Gupta</p>
+            <p>📞 <strong>Phone Number:</strong> <a href="tel:+919876543210" style="color: #2c1a11; font-weight: bold;">+91 98765-43210</a></p>
+            <p>💬 <strong>WhatsApp Chat:</strong> <a href="https://wa.me" target="_blank" style="color: #25D366; font-weight: bold;">Click to Chat on WhatsApp</a></p>
+            <p>📧 <strong>Email Address:</strong> stay@cozyspoonhotel.com</p>
+            <p>📍 <strong>Location:</strong> 123 Luxury Palace Boulevard, Grand District</p>
+        </div>
+    </div>
+
+    <!-- Footer Copyright Disclaimer -->
+    <footer>
+        <p>&copy; 2026 The Cozy Spoon Hotel. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
